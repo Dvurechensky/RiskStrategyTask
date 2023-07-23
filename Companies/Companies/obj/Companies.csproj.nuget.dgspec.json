@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Companies\\Companies\\Companies\\Companies.csproj": {}
+    "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {}
   },
   "projects": {
-    "C:\\Companies\\Companies\\Companies\\Companies.csproj": {
+    "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Companies\\Companies\\Companies\\Companies.csproj",
+        "projectUniqueName": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
         "projectName": "Companies",
-        "projectPath": "C:\\Companies\\Companies\\Companies\\Companies.csproj",
+        "projectPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
         "packagesPath": "C:\\Users\\DvurechenskyASP\\.nuget\\packages\\",
-        "outputPath": "C:\\Companies\\Companies\\Companies\\obj\\",
+        "outputPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DvurechenskyASP\\AppData\\Roaming\\NuGet\\NuGet.Config",

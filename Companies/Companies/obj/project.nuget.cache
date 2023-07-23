@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZBRwiWqzajFU9zPVkappGTG8/F4hbTJJANzU6vAvn3LJE4x1PHvnhXB9z9PfMYdqP6mu4ZxgQrS+3pHz5TNY2Q==",
+  "dgSpecHash": "jFXQDcqCkfz52CIhO+8FS0PjULmho3kxD4+OWPcoK/UBHIX6fK/D7OM6qXIKMTWrNaouqUxT0MKjP742WEN3xg==",
   "success": true,
-  "projectFilePath": "C:\\Companies\\Companies\\Companies\\Companies.csproj",
+  "projectFilePath": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DvurechenskyASP\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.9\\microsoft.data.sqlite.core.7.0.9.nupkg.sha512",
     "C:\\Users\\DvurechenskyASP\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

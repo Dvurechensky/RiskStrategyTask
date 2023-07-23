@@ -1707,11 +1707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Companies\\Companies\\Companies\\Companies.csproj",
+      "projectUniqueName": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
       "projectName": "Companies",
-      "projectPath": "C:\\Companies\\Companies\\Companies\\Companies.csproj",
+      "projectPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
       "packagesPath": "C:\\Users\\DvurechenskyASP\\.nuget\\packages\\",
-      "outputPath": "C:\\Companies\\Companies\\Companies\\obj\\",
+      "outputPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DvurechenskyASP\\AppData\\Roaming\\NuGet\\NuGet.Config",
