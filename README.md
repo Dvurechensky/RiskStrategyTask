@@ -3,8 +3,8 @@
 > https://hh.ru/vacancy/83142848?from=share_ios
 
 - Требования системы:
-Visual Studio 2022 or DataRider
-Настроенный Grunt под ASP NET Core (опционально)
+1. Visual Studio 2022 or DataRider
+2. Настроенный Grunt под ASP NET Core (опционально)
 
 - Требования задания:
 
