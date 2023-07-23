@@ -1,0 +1,50 @@
+﻿@using Models
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Companies";
+}
+
+<body>
+    <div class="content">
+        <div class="content_companies">
+            <div class="header">
+                <h4>Companies</h4>
+                <div class="header_btns">
+                    <div class="mini_btn" title="Добавить" id="add_company_action">
+                        <svg>
+                            <use xlink:href="#plus_btn"></use>
+                        </svg>
+                    </div>
+                    <div class="mini_btn" title="Редактировать" id="edit_action">
+                        <svg>
+                            <use xlink:href="#pen_btn"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Company Name</td>
+                            <td>City</td>
+                            <td>State</td>
+                            <td>Phone</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var c in Model.Companies)
+                        {
+                            <tr>
+                                <td><a href="/details/@c.Id" target="_blank">@c.Name</a></td>
+                                <td>@c.City</td>
+                                <td>@c.State</td>
+                                <td>@c.Phone</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,246 @@
+
+
+html {
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.content {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content_companies {
+    border: 3px solid black;
+    padding: 0 20px 40px;
+    margin: 10px;
+}
+
+.header {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+    .header.mini{
+        width: 330px;
+    }
+
+        .header.mini h4 {
+            min-height: 20px;
+            cursor: default;
+        }
+
+    .header.details {
+        width: 85%;
+        justify-content: flex-start;
+    }
+
+    .header.details h4 {
+        padding-right: 25px;
+        cursor: default;
+    }
+
+    .header .header_btns {
+        display: flex;
+    }
+
+        .header .header_btns svg {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+            .header .header_btns svg .mini_btn {
+                width: 30px;
+                height: 30px;
+            }
+
+.group {
+    margin: 10px 20px 20px 0;
+    padding-bottom: 20px;
+    max-width: 330px;
+    border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+    .group.two {
+        max-width: 600px
+    }
+
+.data {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+    .data.row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+        .data.row.empo {
+            width: 97%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+            .data.row.empo .group {
+                margin: 0px;
+            }
+
+                .data.row.empo .group:first-child {
+                    margin: 0px;
+                    padding-right: 20px;
+                }
+
+    .data.mini {
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(2,0fr);
+        grid-gap: 10px;
+        font-size: 18px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        white-space: nowrap;
+    }
+
+        .data.mini input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #d5d5d5;
+            font-size: 20px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            width: 741%;
+        }
+
+    .data.table {
+        width: 100%;
+        max-height: 330px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+        .data.table::-webkit-scrollbar {
+            display: none;
+        }
+
+        .data.table table {
+            cursor: default;
+            width: 330px;
+            max-height: 330px;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+            .data.table table thead tr {
+                position: sticky;
+                top: 0;
+                background: white;
+            }
+
+            .data.table table thead tr td {
+                padding: 10px;
+            }
+
+            .data.table table tbody tr td {
+                padding: 12px;
+                cursor: pointer;
+            }
+
+    .data table {
+        width: 1000px;
+        border-collapse: collapse;
+        border: 2px solid #EBEBEB;
+    }
+
+        .data table thead {
+            color: #B3A9AC;
+        }
+
+        .data table thead tr td {
+            padding: 5px;
+        }
+
+        .data table tbody tr a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .data table tbody tr td {
+            padding: 5px;
+            border-bottom-color: white;
+        }
+
+.table-scroll-body {
+    max-height: 280px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.table-scroll table {
+    width: 100%;
+    table-layout: fixed;
+    border-top: none;
+}
+
+.table-scroll thead td {
+    text-align: left;
+    padding: 10px 15px;
+    border-top: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+}
+
+.table-scroll tbody td {
+    text-align: left;
+    border-left: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+.table-scroll-body table tbody.tnotes tr td:first-child {
+    text-align: right;
+}
+
+/* Стили для скролла */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+.element {
+}

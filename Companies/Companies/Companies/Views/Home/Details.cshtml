@@ -1,0 +1,248 @@
+﻿@using Models
+@model HomeViewModel
+@{
+    ViewData["Title"] = "Details - " + @Model.DetailsCompany.CompanyInfo.Name;
+}
+
+<body>
+    <div class="content">
+        <div class="content_companies">
+            <div class="header details">
+                <h4>Company details</h4>
+                <label>@Model.DetailsCompany.CompanyInfo.Name</label>
+            </div>
+            <div class="data row">
+                <div class="group">
+                    <div class="header mini">
+                        <h4>Info</h4>
+                        <div class="header_btns">
+                            <div class="mini_btn" title="Загружено">
+                                <svg>
+                                    <use xlink:href="#check_icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data mini" id="info_block">
+@*                        <label>ID:</label>
+                        <input type="number" value="1" readonly />
+                        <label>Name:</label>
+                        <input type="text" value="Super Mart of the West" readonly />
+                        <label>Address:</label>
+                        <input type="text" value="702 SW 8th Street" readonly />
+                        <label>City:</label>
+                        <input type="text" value="Bentonville" readonly />
+                        <label>State:</label>
+                        <input type="text" value="Arkansas" readonly />*@
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="header mini">
+                        <h4>History</h4>
+                        <div class="header_btns">
+                            <div class="mini_btn" title="Обновить" id="update_history_action">
+                                <svg>
+                                    <use xlink:href="#update_icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data table">
+                        <div class="table-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Order Date</td>
+                                        <td>Store City</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="table-scroll-body">
+                                <table>
+                                    <tbody id="history_block">
+@*                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11/12/2013</td>
+                                            <td>Las Vegas</td>
+                                        </tr>*@
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="header mini">
+                        <h4>Notes</h4>
+                        <div class="header_btns">
+                            <div class="mini_btn" title="Добавить" id="add_notes_action">
+                                <svg>
+                                    <use xlink:href="#plus_btn"></use>
+                                </svg>
+                            </div>
+                            <div class="mini_btn" title="Удалить" id="remove_notes_action">
+                                <svg>
+                                    <use xlink:href="#trash_icon"></use>
+                                </svg>
+                            </div>
+                            <div class="mini_btn" title="Обновить" id="update_notes_action">
+                                <svg>
+                                    <use xlink:href="#update_icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data table">
+                        <div class="table-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Invoice Number</td>
+                                        <td>Employee</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="table-scroll-body">
+                                <table>
+                                    <tbody class="tnotes" id="notes_block">
+@*                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>
+                                        <tr>
+                                            <td>35703</td>
+                                            <td>Todd Hoffman</td>
+                                        </tr>*@
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data row empo">
+                    <div class="group">
+                        <div class="header mini">
+                            <h4>Employers</h4>
+                            <div class="header_btns">
+                                <div class="mini_btn" title="Добавить" id="add_employees_action">
+                                    <svg>
+                                        <use xlink:href="#plus_btn"></use>
+                                    </svg>
+                                </div>
+                                <div class="mini_btn" title="Редактировать" id="edit_employees_action">
+                                    <svg>
+                                        <use xlink:href="#pen_btn"></use>
+                                    </svg>
+                                </div>
+                                <div class="mini_btn" title="Обновить" id="update_employees_action">
+                                    <svg>
+                                        <use xlink:href="#update_icon"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data table">
+                            <div class="table-scroll">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td>Last Name</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="table-scroll-body">
+                                    <table>
+                                        <tbody id="employees_block">
+                                           @* <tr>
+                                                <td>John</td>
+                                                <td>Heart</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Olivia</td>
+                                                <td>Peyton</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Robert</td>
+                                                <td>Reagan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cynthia</td>
+                                                <td>Stanwick</td>
+                                            </tr>*@
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="header mini">
+                            <h4> </h4>
+                            <div class="header_btns">
+                                <div class="mini_btn" title="Добавить" id="add_action">
+                                    <svg>
+                                        <use xlink:href="#pen_btn"></use>
+                                    </svg>
+                                </div>
+                                <div class="mini_btn" title="Удалить" id="remove_employees_action">
+                                    <svg>
+                                        <use xlink:href="#trash_icon"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data mini">
+                            <label>First Name:</label>
+                            <input type="text" id="employee_fisrt" value=""/>
+                            <label>Last Name:</label>
+                            <input type="text" id="employee_last" value="" />
+                            <label>Title:</label>
+                            <input type="text" id="employee_title" value="" />
+                            <label>Birth Date:</label>
+                            <input type="date" id="employee_date" value=""
+                                   required />
+                            <label>Position:</label>
+                            <input type="text" id="employee_pos" value="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
