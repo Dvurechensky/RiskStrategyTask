@@ -3,8 +3,16 @@
 > https://hh.ru/vacancy/83142848?from=share_ios
 
 - Требования системы:
+> для запуска
 1. Visual Studio 2022 or DataRider
+> для разработки
 2. Настроенный Grunt под ASP NET Core (опционально)
+3. Выгрузить папку node_modules из проекта
+4. В PowerShell в корне проекта ввести команду 
+```bash
+cmd /c mklink /D node_modules node_modules
+```
+5. Перезапустить проект
 
 - Требования задания:
 
