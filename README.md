@@ -1,4 +1,4 @@
-# <g-emoji class="g-emoji" alias="crystal_ball" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png">🔮</g-emoji> Тестовое задание компании Стратегия Рийска (Владикавказ)
+# <g-emoji class="g-emoji" alias="crystal_ball" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png">🔮</g-emoji> Тестовое задание компании Стратегия Рийска (Владикавказ)(SCAM-мошенническая компания)
 
 > https://hh.ru/vacancy/83142848?from=share_ios
 
