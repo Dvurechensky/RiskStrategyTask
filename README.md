@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/HTML5-gray?logo=htmlacademy&logoColor=00BFFF">
     <img src="https://img.shields.io/badge/CSS3-gray?logo=css3&logoColor=00FF7F">
     <img src="https://img.shields.io/badge/JavaScript-gray?logo=javascript&logoColor=8B008B">
-    <img src="https://img.shields.io/badge/Grunt-gray?logo=grunt&logoColor=000000">
+    <img src="https://img.shields.io/badge/Grunt-gray?logo=grunt&logoColor=F4A460">
   </p>
 </p>
 
