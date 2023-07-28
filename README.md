@@ -1,3 +1,16 @@
+<p align="center">
+  <img alt="RiskStrategyTask" src="https://raw.githubusercontent.com/Dvurechensky/RiskStrategyTask/main/Info/logo.png" height="140" />
+  <p align="center">
+    <a href="https://sites.google.com/view/dvurechensky" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/Dvurechensky-N-blue"></a>
+    <img src="https://img.shields.io/badge/Csharp-Asp Net Core-blue?logo=csharp&logoColor=FFFF00">
+    <img src="https://img.shields.io/badge/TypeScript-gray?logo=typescript&logoColor=FF4500">
+    <img src="https://img.shields.io/badge/HTML5-gray?logo=htmlacademy&logoColor=00BFFF">
+    <img src="https://img.shields.io/badge/CSS3-gray?logo=css3&logoColor=00FF7F">
+    <img src="https://img.shields.io/badge/JavaScript-gray?logo=javascript&logoColor=8B008B">
+  </p>
+</p>
+
+
 # <g-emoji class="g-emoji" alias="crystal_ball" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png">🔮</g-emoji> Тестовое задание компании Стратегия Рийска (Владикавказ)(SCAM-мошенническая компания)
 
 > https://hh.ru/vacancy/83142848?from=share_ios
