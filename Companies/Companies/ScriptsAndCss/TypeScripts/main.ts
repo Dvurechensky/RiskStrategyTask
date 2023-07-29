@@ -14,11 +14,13 @@
         switch (partsPath[1]) { //смотрим путь URL
             case "":
                 {
+                    console.log("Index Load");
                     new Index();
                 }
                 break;
             case "details": //страница детализации
                 {   //создаем класс авторизации кабинета
+                    console.log("Details Load");
                     const id = partsPath[2];
                     const detailsScene = new Details(utilities, cookies, id);
                     //запускаем главную сцену

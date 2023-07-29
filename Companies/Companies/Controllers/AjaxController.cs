@@ -307,6 +307,36 @@ public class AjaxController : ControllerBase
         }
     }
 
+
+    /// <summary>
+    /// Генерировать базу данных в папке
+    /// </summary>
+    /// <returns>bool</returns>
+    [HttpPost]
+    [ProducesResponseType(typeof(bool), 200)]
+    [ProducesResponseType(404)]
+    [ProducesResponseType(401)]
+    [ProducesResponseType(500)]
+    public async Task<IActionResult> GenerateTables()
+    {
+        try
+        {   //проверяем входящие данные
+            if (!ModelState.IsValid) return BadRequest("bad request data");
+            //получаем данные из бд
+            await AppDb.GenerateFileDb();
+            //возвращаем в JSON
+            return "Complete!".SuccessResponse();
+        }
+        catch (Exception ex)
+        {
+#if DEBUG
+            Console.WriteLine(ex.Message);
+#endif
+            return BadRequest("failed"); //отдаем BadRequest
+        }
+    }
+
+
     /// <summary>
     /// Генерировать таблицу компаний
     /// </summary>

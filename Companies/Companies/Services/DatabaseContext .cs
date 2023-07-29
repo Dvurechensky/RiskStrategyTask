@@ -1,6 +1,7 @@
 ﻿using Companies.Data.Home;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.Options;
 
 namespace Companies.Services;
 
@@ -33,14 +34,13 @@ public class DatabaseContext : DbContext
     /// Конструктор
     /// </summary>
     /// <param name="options"></param>
-    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-    {
+    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options) { }
 
-#if DEBUG
-        Console.WriteLine($"Create db {options}");
-#endif
-        //Database.EnsureDeleted();
-        //Database.EnsureCreated();
+    public async Task GenerateFileDb()
+    {
+        Console.WriteLine($"Create db");
+        await Database.EnsureDeletedAsync();
+        await Database.EnsureCreatedAsync();
     }
 
     /// <summary>
@@ -85,16 +85,12 @@ public class DatabaseContext : DbContext
             };
             await Companies.AddRangeAsync(c1);
             await SaveChangesAsync();
-#if DEBUG
-             Console.WriteLine("Save db Complete!");
-#endif
+            Console.WriteLine("Save db Complete!");
             return await Task.FromResult(true);
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -113,9 +109,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -134,9 +128,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -155,9 +147,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -185,9 +175,7 @@ public class DatabaseContext : DbContext
         } 
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -214,9 +202,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -243,9 +229,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -273,9 +257,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -303,9 +285,7 @@ public class DatabaseContext : DbContext
         }
         catch (Exception ex)
         {
-#if DEBUG
             Console.WriteLine(ex.Message);
-#endif
             return await Task.FromResult(false);
         }
     }
@@ -316,7 +296,10 @@ public class DatabaseContext : DbContext
     /// <param name="optionsBuilder">Опции</param>
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=application.db");
+        var dir = Path.GetDirectoryName(Environment.ProcessPath);
+        var path = Path.Combine(dir, "application.db");
+        Console.WriteLine("DatabasePath: " + path);
+        optionsBuilder.UseSqlite("Data Source=" + path);
         optionsBuilder.LogTo(Console.WriteLine, new[] { RelationalEventId.CommandExecuted });
     }
 }

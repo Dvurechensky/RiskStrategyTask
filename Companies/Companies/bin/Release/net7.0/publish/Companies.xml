@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Companies</name>
+    </assembly>
+    <members>
+        <member name="T:AjaxController">
+            <summary>
+            Контроллер API и оболочки JS
+            </summary>
+        </member>
+        <member name="F:AjaxController.AppDb">
+            <summary>
+            Экземпляр контекста БД
+            </summary>
+        </member>
+        <member name="M:AjaxController.#ctor(Companies.Services.DatabaseContext)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="dbContext">Контекст работы с БД</param>
+        </member>
+        <member name="M:AjaxController.GetCompanyInfo(Companies.Data.Ajax.CompanyInfoRequest)">
+            <summary>
+            Получить информацию о компании
+            </summary>
+            <param name="сompanyInfoRequest">Тело</param>
+            <returns>CompanyInfo</returns>
+        </member>
+        <member name="M:AjaxController.GetEmployee(Companies.Data.Ajax.GetEmployeeRequest)">
+            <summary>
+            Получить информацию о сотруднике компании
+            </summary>
+            <param name="getEmployeeRequest">Тело</param>
+            <returns>CompanyEmployees</returns>
+        </member>
+        <member name="M:AjaxController.GetOrdersHistory">
+            <summary>
+            Получить информацию о списке событий
+            </summary>
+            <returns>List-OrderHistory</returns>
+        </member>
+        <member name="M:AjaxController.GetNotes">
+            <summary>
+            Получить информацию о Notes
+            </summary>
+            <returns>List-CompanyNotes</returns>
+        </member>
+        <member name="M:AjaxController.GetEmployees">
+            <summary>
+            Получить информацию о участниках
+            </summary>
+            <returns>List-OrderHistory</returns>
+        </member>
+        <member name="M:AjaxController.CreateEmployees(Companies.Data.Ajax.CreateEmployeesRequest)">
+            <summary>
+            Создать employees в компании
+            </summary>
+            <param name="employeesRequest">Список employees (id не имеет значения, главное по возрастанию)(2013-01-08 - формат даты)</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.CreateNotes(Companies.Data.Ajax.CreateNotesRequest)">
+            <summary>
+            Создать notes в компании
+            </summary>
+            <param name="notesRequest">Список notes (id не имеет значения, главное по возрастанию)</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.DeleteNotes(Companies.Data.Ajax.DeleteNotesRequest)">
+            <summary>
+            Удалить notes в компании
+            </summary>
+            <param name="notesRequest">Список notes (id не имеет значения, главное по возрастанию)</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.DeleteEmployees(Companies.Data.Ajax.DeleteEmployeesRequest)">
+            <summary>
+            Удалить employees в компании
+            </summary>
+            <param name="employeesRequest">Список employees (id не имеет значения, главное по возрастанию)</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.CreateOrderHistory(Companies.Data.Ajax.CompanyHistoryRequest)">
+            <summary>
+            Создать событие в компании
+            </summary>
+            <param name="companyHistoryRequest">Список событий (id не имеет значения, главное по возрастанию)</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.GenerateTables">
+            <summary>
+            Генерировать базу данных в папке
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.GenerateCompanies">
+            <summary>
+            Генерировать таблицу компаний
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.DeleteAllCompanies">
+            <summary>
+            Удалить все компании
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.DeleteAllOrdersHistory">
+            <summary>
+            Удалить все события Orders History компании
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:AjaxController.DeleteAllNotes">
+            <summary>
+            Удалить все события Notes
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Companies.Controllers.HomeController.Index">
+            <summary>
+            Главная страница
+            </summary>
+        </member>
+        <member name="M:Companies.Controllers.HomeController.Details(System.Int32)">
+            <summary>
+            Метод вывода информации о компании
+            </summary>
+            <param name="id">ID компании</param>
+            <returns>Детализация</returns>
+        </member>
+        <member name="M:Companies.Controllers.HomeController.Error">
+            <summary>
+            Страница ошибки
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.CompanyInfoRequest">
+            <summary>
+            Запрос данных о компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.CompanyInfoRequest.IdCompany">
+            <summary>
+            Идентификатор команды
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.GetEmployeeRequest">
+            <summary>
+            Запрос данных о сотруднике компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.GetEmployeeRequest.IdEmployee">
+            <summary>
+            Идентификатор команды
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.CompanyHistoryRequest">
+            <summary>
+            Параметры для создания order в History компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.CompanyHistoryRequest.OrderHistoryList">
+            <summary>
+            Список параметров
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.CreateNotesRequest">
+            <summary>
+            Параметры для создания Notes компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.CreateNotesRequest.CompanyNotes">
+            <summary>
+            Список Notes
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.CreateEmployeesRequest">
+            <summary>
+            Параметры для создания Employees компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.CreateEmployeesRequest.CompanyEmployees">
+            <summary>
+            Список Employees
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.DeleteNotesRequest">
+            <summary>
+            Параметры для удаления Notes компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.DeleteNotesRequest.CompanyNotesIds">
+            <summary>
+            Список Notes
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Ajax.DeleteEmployeesRequest">
+            <summary>
+            Параметры для удаления Employees компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Ajax.DeleteEmployeesRequest.CompanyEmployeesIds">
+            <summary>
+            Список Notes
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Home.CompanyInfo">
+            <summary>
+            Компания
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.Address">
+            <summary>
+            Адрес
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.City">
+            <summary>
+            Город
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.State">
+            <summary>
+            Штат
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.Phone">
+            <summary>
+            Телефон
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyInfo.IsValid">
+            <summary>
+            Корректность данных
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Home.OrderHistory">
+            <summary>
+            Краткая история магазинов
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.OrderHistory.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.OrderHistory.OrderDate">
+            <summary>
+            Дата события
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.OrderHistory.StoreCity">
+            <summary>
+            Город события
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Home.CompanyNotes">
+            <summary>
+            Notes компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyNotes.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyNotes.Employee">
+            <summary>
+            Дата события
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Home.CompanyEmployees">
+            <summary>
+            Employees компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.FirstName">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.LastName">
+            <summary>
+            Фамилия
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.Title">
+            <summary>
+            Пол
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.BirthDate">
+            <summary>
+            День рождения
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.CompanyEmployees.Position">
+            <summary>
+            Должность
+            </summary>
+        </member>
+        <member name="T:Companies.Data.Home.DetailsCompany">
+            <summary>
+            Полная информация о компании
+            </summary>
+        </member>
+        <member name="P:Companies.Data.Home.DetailsCompany.CompanyInfo">
+            <summary>
+            Основная информация
+            </summary>
+        </member>
+        <member name="T:Companies.Services.DatabaseContext">
+            <summary>
+            Контекст работы с БД
+            </summary>
+        </member>
+        <member name="P:Companies.Services.DatabaseContext.Companies">
+            <summary>
+            Инициализация таблицы компаний
+            </summary>
+        </member>
+        <member name="P:Companies.Services.DatabaseContext.HistoryOrder">
+            <summary>
+            Инициализация таблицы истории событий компаний
+            </summary>
+        </member>
+        <member name="P:Companies.Services.DatabaseContext.CompanyNotes">
+            <summary>
+            Инициализация таблицы Notes компаний
+            </summary>
+        </member>
+        <member name="P:Companies.Services.DatabaseContext.CompanyEmployees">
+            <summary>
+            Инициализация таблицы Employees компаний
+            </summary>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Companies.Services.DatabaseContext})">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.GenerateCompanies">
+            <summary>
+            Генерировать базовую таблицу
+            </summary>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.DeleteAllCompanies">
+            <summary>
+            Удалить все данные таблицы компаний
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.DeleteAllNotes">
+            <summary>
+            Удалить все данные таблицы компаний
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.DeleteAllOrdersHistory">
+            <summary>
+            Удалить все данные таблицы компаний
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.CreateOrderHistory(System.Collections.Generic.List{Companies.Data.Home.OrderHistory})">
+            <summary>
+            Создание элемента истории
+            </summary>
+            <param name="orders">Список событий</param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.DeleteNotes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Удаление элемента(ов) Notes
+            </summary>
+            <param name="notes">Список событий</param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.DeleteEmployees(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Удаление элемента(ов) Employees
+            </summary>
+            <param name="employees">Список участников</param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.CreateNotes(System.Collections.Generic.List{Companies.Data.Home.CompanyNotes})">
+            <summary>
+            Создание элемента(ов) Notes
+            </summary>
+            <param name="notes">Список событий</param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.CreateEmployees(System.Collections.Generic.List{Companies.Data.Home.CompanyEmployees})">
+            <summary>
+            Создание элемента(ов) Employees
+            </summary>
+            <param name="employees">Список участников</param>
+        </member>
+        <member name="M:Companies.Services.DatabaseContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Создание файла БД
+            </summary>
+            <param name="optionsBuilder">Опции</param>
+        </member>
+        <member name="T:Extensions.AuthExt">
+            <summary>
+            Класс вспомогательных методов для авторизации
+            </summary>
+        </member>
+        <member name="F:Extensions.AuthExt.NameSessionCookie">
+            <summary>
+            Название куки сессии пользователя
+            </summary>
+        </member>
+        <member name="M:Extensions.AuthExt.DestroyUserSession(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Разрушает сессию пользователя
+            </summary>
+            <param name="httpContext">HttpContext запроса</param>
+        </member>
+        <member name="T:Extensions.JsonExt">
+            <summary>
+            Класс вспомогательных методов для работы с JSON
+            </summary>
+        </member>
+        <member name="M:Extensions.JsonExt.SerializeToJson(System.Object,System.Text.Json.Serialization.JsonConverter)">
+            <summary>
+            Объект в JSON строку
+            </summary>
+            <param name="data">Входящий объект</param>
+            <param name="jsonConverter">Кастомный конвертер</param>
+            <returns>Строка JSON</returns>
+        </member>
+        <member name="M:Extensions.JsonExt.SuccessResponse(System.Object,System.Text.Json.Serialization.JsonConverter)">
+            <summary>
+            Форматирует объект в ответ с JSON строкой в теле
+            </summary>
+            <param name="data">Входящий объект</param>
+            <param name="jsonConverter">Кастомный конвертер</param>
+            <returns>Результат ответа</returns>
+        </member>
+        <member name="T:Middleware.AntiforgeryMiddleware">
+            <summary>
+            Обработчик службы против подделки запросов
+            </summary>
+        </member>
+        <member name="P:Middleware.AntiforgeryMiddleware.Next">
+            <summary>
+            Делегат на передачу действия следующему в роутере
+            </summary>
+        </member>
+        <member name="P:Middleware.AntiforgeryMiddleware.Antiforgery">
+            <summary>
+            API для настройки функций против подделки
+            </summary>
+        </member>
+        <member name="M:Middleware.AntiforgeryMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Antiforgery.IAntiforgery)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="next">Делегат на передачу действия следующему в роутере</param>
+            <param name="antiforgery">API для настройки функций против подделки</param>
+        </member>
+        <member name="M:Middleware.AntiforgeryMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Асинхронный обработчик запроса
+            </summary>
+            <param name="context">Контекст запроса</param>
+        </member>
+        <member name="T:Models.HomeViewModel">
+            <summary>
+            Модель для передачи в View
+            </summary>
+        </member>
+        <member name="P:Models.HomeViewModel.Companies">
+            <summary>
+            Список компаний
+            </summary>
+        </member>
+        <member name="P:Models.HomeViewModel.DetailsCompany">
+            <summary>
+            Компания детализации
+            </summary>
+        </member>
+    </members>
+</doc>
