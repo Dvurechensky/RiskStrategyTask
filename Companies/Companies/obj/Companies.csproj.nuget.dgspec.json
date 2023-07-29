@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {}
+    "D:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {}
   },
   "projects": {
-    "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {
+    "D:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
+        "projectUniqueName": "D:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
         "projectName": "Companies",
-        "projectPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
-        "packagesPath": "C:\\Users\\DvurechenskyASP\\.nuget\\packages\\",
-        "outputPath": "Z:\\RiskStrategyTask\\Companies\\Companies\\obj\\",
+        "projectPath": "D:\\RiskStrategyTask\\Companies\\Companies\\Companies.csproj",
+        "packagesPath": "C:\\Users\\Rota\\.nuget\\packages\\",
+        "outputPath": "D:\\RiskStrategyTask\\Companies\\Companies\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DvurechenskyASP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rota\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

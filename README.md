@@ -12,89 +12,86 @@
 </p>
 
 
-# <g-emoji class="g-emoji" alias="crystal_ball" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png">🔮</g-emoji> Тестовое задание компании Стратегия Рийска (Владикавказ)(SCAM-мошенническая компания)
+# <g-emoji class="g-emoji" alias="crystal_ball" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f52e.png">🔮</g-emoji> Тестовое задание компании Стратегия Рийска (Владикавказ)
+**🎯SCAM вакансия**
 
 > https://hh.ru/vacancy/83142848?from=share_ios
 
-- Требования системы:
-> для запуска
-1. Visual Studio 2022 or DataRider
-> для разработки
-2. Настроенный Grunt под ASP NET Core (опционально)
-3. Выгрузить папку node_modules из проекта
-4. В PowerShell в корне проекта ввести команду 
+- 🚀 Требования системы для запуска:
+1. Visual Studio 2022
+
+- 🚀 Требования системы для разработки:
+> для функционирования встроенного Grunt в проекте
+1. Выгрузить папку node_modules из проекта
+2. В PowerShell в корне проекта ввести команду 
 ```bash
 cmd /c mklink /D node_modules node_modules
 ```
-5. Перезапустить проект
+3. Перезапустить проект
 
-- Требования задания:
+## ✨Требования задания
 
-### [1]
----
-• The text in the "Company Name" column should be a link that opens "Details" for its 
+> The text in the "Company Name" column should be a link that opens "Details" for its 
 object
-
-• Текст в столбце «Название компании» должен быть ссылкой, которая открывает «Подробности» компании
-
-### [2]
----
-• Use EntityFramework, store data in memory (add a code that creates initial data at 
+1. Текст в столбце «Название компании» должен быть ссылкой, которая открывает «Подробности» компании
+> Use EntityFramework, store data in memory (add a code that creates initial data at 
 application startup)
-
-• Используйте EntityFramework, храните данные в памяти (добавьте код, создающий исходные данные в
+2. Используйте EntityFramework, храните данные в памяти (добавьте код, создающий исходные данные в
 запуск приложения)
-
-### [3]
----
-• Set a fixed width for groups in "Details"
-
-• Установите фиксированную ширину для групп в разделе «Подробности».
-
-### [4]
----
-• Use CSS Flex to align groups in "Details", there should be 1 column of groups if browser 
+> Set a fixed width for groups in "Details"
+3. Установите фиксированную ширину для групп в разделе «Подробности».
+> Use CSS Flex to align groups in "Details", there should be 1 column of groups if browser 
 window is narrow
-
-• Используйте CSS Flex для выравнивания групп в разделе "Подробности", должен быть 1 столбец групп, если окно браузера узкое
-
-### [5]
----
-• Use CSS Grid to align items in groups in "Details"
-
-• Используйте CSS Grid для выравнивания элементов в группах в разделе «Подробности».
-
-### [6]
----
-• Avoid duplication of CSS and HTML markup code that generates "Details" in C#/markup 
+4. Используйте CSS Flex для выравнивания групп в разделе "Подробности", должен быть 1 столбец групп, если окно браузера узкое
+> Use CSS Grid to align items in groups in "Details"
+5. Используйте CSS Grid для выравнивания элементов в группах в разделе «Подробности».
+> Avoid duplication of CSS and HTML markup code that generates "Details" in C#/markup 
 code (each group should have the same layout for the 'caption', 'toolbar' and 'content' 
 items)
-
-• Избегайте дублирования кода разметки CSS и HTML, который генерирует «Подробности» в C#/разметке.
+6. Избегайте дублирования кода разметки CSS и HTML, который генерирует «Подробности» в C#/разметке.
 код (каждая группа должна иметь одинаковый макет для объектов «заголовка», «панели инструментов» и «контента»)
-
-### [7]
----
-• Implement behavior for 'Refresh' button: reload data from the server and recreate DOM 
+> Implement behavior for 'Refresh' button: reload data from the server and recreate DOM 
 in browser
-
-• Реализовать поведение кнопки «Обновить»: перезагрузить данные с сервера и заново создать DOM.
+7. Реализовать поведение кнопки «Обновить»: перезагрузить данные с сервера и заново создать DOM.
 в браузере
-
-### [8]
----
-• Adjust the "Employees" group to be nearly twice wider than other groups, keep vertical 
+> Adjust the "Employees" group to be nearly twice wider than other groups, keep vertical 
 groups alignment
-
-• Отрегулируйте группу "Сотрудники", чтобы она была почти в два раза шире, чем другие группы, сохраняя вертикальность
+8. Отрегулируйте группу "Сотрудники", чтобы она была почти в два раза шире, чем другие группы, сохраняя вертикальность
 выравнивание групп
-
-### [9]
----
-• Don't render grids on the server side. Instead, render an empty grid and perform a new 
+> Don't render grids on the server side. Instead, render an empty grid and perform a new 
 'fetch' request when a page is loaded and build grid rows in javascript code, in browser. 
 Implement necessary server side API to load data for grids
-
-• Не визуализируйте сетки на стороне сервера. Вместо этого визуализируйте пустую сетку и выполните новую
+7. Не визуализируйте сетки на стороне сервера. Вместо этого визуализируйте пустую сетку и выполните новую
 запрос «выборки» при загрузке страницы и построение строк сетки в коде javascript в браузере.
 Реализовать необходимый API на стороне сервера для загрузки данных для сеток.
+
+## 🤖 Результат выполнения
+
+<p align="center">
+  <h1 align="center">👨🏽‍💻 Версия на ПК</h1>
+  <h5 align="center">💫 Main 💫</h5>
+  <img src="Info/1.png" width="100%">
+  <h5 align="center">💫 Details 💫</h5>
+  <img src="Info/2.png" width="100%">
+  <h1 align="center">👨🏽‍💻 Для заполнения групп создано REST API</h1>
+  <img src="Info/3.png" width="100%">
+  <h1 align="center">👨🏽‍💻 Пример заполненной версии 💫Details💫</h1>
+  <img src="Info/4.png" width="100%">
+  <h1 align="center">👨🏽‍💻 Пример мобильной версии 💫Details💫</h1>
+  <h5 align="center">💫 870px 💫</h5>
+  <p align="center">
+    <img src="Info/5.png" width="65%">
+  </p>
+  <h5 align="center">💫 500px 💫</h5>
+  <p align="center">
+    <img src="Info/6.png" width="35%">
+  </p>
+</p>
+
+## 👾 Важно отметить
+
+- В задаче не была описана логика работы кнопок редактирования и поведение кнопки добавления
+- В задаче не затрагивались вопросы ограничения по стеку технологий применяемых для ускорения разработки
+- В задаче нету пунктов о сложности или простоте исполнения, конкретного формата выполнения работы не указано
+- Бонусом в задаче реализована поддержка TypeScript и автоматическая генерация JavaScript и CSS сразу в минимизированный формат
+- Бонусом в задаче сделано API способное принимать пачки данных на обработку
